@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-//@ts-ignore
-import "./globals.css"; // Ensure standard global tailwind directives are linked here
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ResolveDesk | Headless AI Ticket Resolution Middleware",
@@ -14,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>{children}</body>
+      <body className="bg-black text-white antialiased">{children}</body>
     </html>
   );
 }
